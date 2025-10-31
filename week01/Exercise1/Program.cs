@@ -4,6 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise1 Project.");
+        /*
+            Author: Christian Wilson
+
+            Purpose: To rewrite the first python exercise activity from CSE 110 in C#.
+        */
+        
+        Console.Write("What is your first name? ");
+        string firstName = Console.ReadLine();
+
+        Console.Write("What is your last name? ");
+        string lastName = Console.ReadLine();
+
+        Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}.");
     }
 }
