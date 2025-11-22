@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Creating order objects
         Order order1 = new Order();
         order1.SetCustomer("Riley Smith");
         order1.SetAddress("123 Main St", "New York City", "NY", "USA");
@@ -18,6 +19,7 @@ class Program
         order2.AddProduct("Biscuits", 25917, (float)3.5, 2);
         order2.AddProduct("Gala Apple", 13530, (float).35, 6);
 
+        // Displaying order attributes
         Console.Write("\nOrder 1:");
         Console.WriteLine("\nPacking Label:" + order1.GetPackingLabel());
         Console.WriteLine("\nShipping Label:" + order1.GetShippingLabel());

@@ -17,11 +17,13 @@ class Product
 
     public float SubtotalOfQuantity()
     {
+        // Calculates subtotal from quantity
         return _price * _quantity;
     }
 
     public string GetPackingInfo()
     {
+        // Gets packing info line.
         return $"\n{_name}, {_id}";
     }
 }
