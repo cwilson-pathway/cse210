@@ -12,7 +12,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Clear();
         // Main Menu
         while (true)
         {
@@ -37,6 +36,7 @@ class Program
                 BreathingActivity breathingActivity = new BreathingActivity("Breathing Activity", "This activity will guide you through breathing exercises you defined just now!", inhale, inhaleHold, exhale, exhaleHold, reps);
                 Console.Clear();
                 breathingActivity.Run();
+                Console.Clear();
             }
             else if (userInput == 2)
             {
@@ -46,6 +46,7 @@ class Program
                 ReflectionActivity reflectionActivity = new ReflectionActivity("Reflection Activity", "This activity will ask you a main prompt and then ask you to ponder questions about it until the time runs out or the questions run out. Please don't type anything during this activity.", activitySecs);
                 Console.Clear();
                 reflectionActivity.Run();
+                Console.Clear();
             }
             else if (userInput == 3)
             {
@@ -55,6 +56,7 @@ class Program
                 ListActivity listActivity = new ListActivity("List Activity", "In this activity, you'll list things according to a given prompt until the time runs out. You may type in this activity.", activitySecs);
                 Console.Clear();
                 listActivity.Run();
+                Console.Clear();
             }
             else if (userInput == 4)
             {
